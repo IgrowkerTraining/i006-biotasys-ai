@@ -28,6 +28,7 @@ dependencies = [
     "httpx>=0.25.2",
     "python-dotenv>=1.0.0",
     "passlib[bcrypt]>=1.7.4",
+    "python-jose[cryptography]>=3.4.0",
 ]
 
 [project.optional-dependencies]
@@ -76,3 +77,13 @@ disallow_untyped_defs = true
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "black>=24.8.0",
+    "flake8>=5.0.4",
+    "isort>=5.13.2",
+    "mypy>=1.14.1",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.24.0",
+]
