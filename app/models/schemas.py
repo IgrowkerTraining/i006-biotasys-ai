@@ -422,7 +422,7 @@ class MicrobiotaInterpretation(BaseModel):
     final_observations: FinalObservations = Field(...)
 
 class AnalysisReport(BaseModel):
-    """Esquema final que se va a guardar en la base de datos y retornar a Backend Nest"""
+    """Esquema que se va a guardar en la base de datos y retornar a Backend Nest"""
     
     study_id: str = Field(..., description="Unique identifier for the study")
     study_code: str = Field(..., description="Study code associated with the report")
